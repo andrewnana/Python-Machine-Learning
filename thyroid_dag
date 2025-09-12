@@ -1,0 +1,26 @@
+// Smoking and Thyroid Cancer Recurrence DAG
+digraph {
+	Smoking [label="History of Smoking"]
+	Age [label="Age at Diagnosis"]
+	Sex [label="Biological Sex"]
+	Radiation [label="Radiation Therapy"]
+	ThyroidFunc [label="Thyroid Function"]
+	Goiter [label=Goiter]
+	Pathology [label="Cancer Pathology Subtype"]
+	Stage [label="TNM Stage"]
+	Recurrence [label="Thyroid Cancer Recurrence"]
+	Smoking -> ThyroidFunc
+	Smoking -> Goiter
+	Smoking -> Pathology
+	Smoking -> Stage
+	Smoking -> Recurrence
+	Age -> Smoking
+	Age -> Recurrence
+	Sex -> Smoking
+	Sex -> Recurrence
+	Radiation -> Recurrence
+	Pathology -> Recurrence
+	ThyroidFunc -> Recurrence
+	Goiter -> Recurrence
+	Stage -> Recurrence
+}

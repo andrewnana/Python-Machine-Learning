@@ -1,0 +1,14 @@
+digraph "Thyroid Cancer DAG" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Thyroid Cancer DAG" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	b7fadd1d79db45999f3e697ea0558b28 [label=Age]
+	"11ae2f629bbb46bd9ecd8c25aeef2dd3" [label=Sex]
+	d1f0bbd7e4474751a76d6a005e76cbff [label=Smoking]
+	"5c68378d13744920b47e194a6ddda080" [label=Recurrence]
+	b7fadd1d79db45999f3e697ea0558b28 -> d1f0bbd7e4474751a76d6a005e76cbff [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	d1f0bbd7e4474751a76d6a005e76cbff -> "5c68378d13744920b47e194a6ddda080" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"11ae2f629bbb46bd9ecd8c25aeef2dd3" -> d1f0bbd7e4474751a76d6a005e76cbff [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"11ae2f629bbb46bd9ecd8c25aeef2dd3" -> "5c68378d13744920b47e194a6ddda080" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	b7fadd1d79db45999f3e697ea0558b28 -> "5c68378d13744920b47e194a6ddda080" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}
